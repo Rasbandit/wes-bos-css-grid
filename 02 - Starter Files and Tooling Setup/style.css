@@ -1,0 +1,39 @@
+.grid-container {
+  width: 1200px;
+  height: 3000px;
+  display: grid;
+  grid-template-columns: repeat(4, 120px);
+  grid-template-rows: 100px 100px 100px 100px 100px;
+  grid-template-areas:
+  "header header header header"
+  "main main main side"
+  "main main main side"
+  "footer footer footer footer";
+  justify-content: space-around;
+  align-content: space-around;
+  justify-items: center;
+  align-items: center;
+}
+
+.box {
+  background: rosybrown;
+}
+
+
+.header {
+  grid-area: header;
+  justify-self: start;
+  align-self: start;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.main {
+  grid-area: main;
+}
+
+.side {
+  grid-area: side;
+}
